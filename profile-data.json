@@ -1,0 +1,600 @@
+{
+  "publications": [
+    {
+      "title": "Aero-Engine Life Prediction Based on ARIMA and LSTM With Multi-Head Attention Mechanism",
+      "authors": [
+        "Shiju Li",
+        "Hongjie Lan",
+        "Ruizhi Ouyang",
+        "Ning Shen",
+        "Tingting Wang",
+        "Kaiye Gao"
+      ],
+      "year": 2026,
+      "journal": "IEEE Access",
+      "volume": "14",
+      "issue": null,
+      "page": "71565-71577",
+      "doi": "10.1109/ACCESS.2026.3676626",
+      "note": "航空发动机寿命预测：结合 ARIMA、LSTM 与多头注意力机制。",
+      "first": false,
+      "note_en": "Life prediction for aero-engines using ARIMA, LSTM and a multi-head attention mechanism.",
+      "figure": {
+        "path": "assets/engine-figure5.png",
+        "zh": "Figure 5 · 预测与真实剩余寿命的对比",
+        "en": "Figure 5 · Predicted and true remaining useful life",
+        "source": "https://doi.org/10.1109/ACCESS.2026.3676626",
+        "license": "CC BY 4.0",
+        "figure_number": 5
+      }
+    },
+    {
+      "title": "Joint Ordering Optimization for a Two-Echelon Pharmaceutical Supply Chain Considering Shelf Life and a Transshipment Mechanism",
+      "authors": [
+        "Shiju Li",
+        "Ruizhi Ouyang",
+        "Li Guo",
+        "Hongjie Lan",
+        "Tingting Wang",
+        "Kaiye Gao"
+      ],
+      "year": 2026,
+      "journal": "Mathematics",
+      "volume": "14",
+      "issue": "2",
+      "page": "302",
+      "doi": "10.3390/math14020302",
+      "note": "考虑保质期、库存约束与转运机制，研究医药供应链的联合订货优化。",
+      "first": false,
+      "note_en": "Joint ordering optimization under shelf-life constraints and a transshipment mechanism.",
+      "figure": {
+        "path": "assets/supply-figure1.png",
+        "zh": "原文 Figure 1 · 两级医药供应链模型",
+        "en": "Figure 1 · Two-echelon pharmaceutical supply chain",
+        "source": "https://mdpi-res.com/d_attachment/mathematics/mathematics-14-00302/article_deploy/mathematics-14-00302-v3.pdf",
+        "license": "CC BY 4.0"
+      }
+    },
+    {
+      "title": "Optimal Water Level Prediction and Control of Great Lakes Based on Multi-Objective Planning and Fuzzy Control Algorithm",
+      "authors": [
+        "Ruizhi Ouyang",
+        "Yang Wang",
+        "Qin Gao",
+        "Xinlu Li",
+        "Qihang Li",
+        "Kaiye Gao"
+      ],
+      "year": 2025,
+      "journal": "Sustainability",
+      "volume": "17",
+      "issue": "8",
+      "page": "3690",
+      "doi": "10.3390/su17083690",
+      "note": "结合多目标规划与模糊控制，在五大湖水位管理中平衡不同利益主体的需求。",
+      "first": true,
+      "note_en": "Multi-objective planning and fuzzy control for balancing stakeholder needs in Great Lakes water-level management.",
+      "figure": {
+        "path": "assets/lakes-figure5.jpg",
+        "zh": "原文 Figure 5 · 五大湖网络流模型",
+        "en": "Figure 5 · Great Lakes network flow model",
+        "source": "https://mdpi-res.com/d_attachment/sustainability/sustainability-17-03690/article_deploy/sustainability-17-03690.pdf",
+        "license": "CC BY 4.0"
+      }
+    }
+  ],
+  "competition_projects": [
+    {
+      "title": {
+        "zh": "奥运奖牌预测与国家聚类",
+        "en": "Olympic medal prediction and country clustering"
+      },
+      "description": {
+        "zh": "结合 K-means、层次聚类与 SOM 对国家分组，比较分类模型并开展交叉验证和特征重要性分析。",
+        "en": "Groups countries using K-means, hierarchical clustering and SOM, then compares classifiers with cross-validation and feature-importance analysis."
+      },
+      "label": {
+        "zh": "2025 MCM · Problem C",
+        "en": "2025 MCM · Problem C"
+      },
+      "url": "https://github.com/ouyangruizhi/2025_MCM_ProblemC",
+      "tags": [
+        "Clustering",
+        "LightGBM",
+        "Model selection"
+      ],
+      "date": "2025"
+    },
+    {
+      "title": {
+        "zh": "宠物产业趋势预测",
+        "en": "Forecasting trends in the pet industry"
+      },
+      "description": {
+        "zh": "使用 ARIMA、残差 AR / EGARCH 和 VAR，研究宠物食品需求、产值、出口及汇率等时间序列。",
+        "en": "Applies ARIMA, residual AR / EGARCH and VAR models to pet-food demand, production, exports and exchange-rate time series."
+      },
+      "label": {
+        "zh": "2024 APMCM · Problem C",
+        "en": "2024 APMCM · Problem C"
+      },
+      "url": "https://github.com/ouyangruizhi/2024_APMCM_ProblemC",
+      "tags": [
+        "ARIMA",
+        "EGARCH",
+        "VAR"
+      ],
+      "date": "2024"
+    },
+    {
+      "title": {
+        "zh": "降雨分类预测",
+        "en": "Binary prediction with a rainfall dataset"
+      },
+      "description": {
+        "zh": "构造多项式特征，使用贝叶斯优化调整 XGBoost，并通过交叉验证分析模型的泛化表现。",
+        "en": "Builds polynomial features and tunes XGBoost with Bayesian optimization, using cross-validation to examine generalization."
+      },
+      "label": {
+        "zh": "Kaggle · 2025.03",
+        "en": "Kaggle · March 2025"
+      },
+      "url": "https://www.kaggle.com/code/ou20040313/bayes-xgboost",
+      "tags": [
+        "XGBoost",
+        "Bayesian optimization",
+        "Classification"
+      ],
+      "date": "2025-03"
+    },
+    {
+      "title": {
+        "zh": "播客收听时长预测",
+        "en": "Predicting podcast listening time"
+      },
+      "description": {
+        "zh": "开展异常值与缺失值处理、特征工程及 XGBoost 调参，并结合交叉验证分析过拟合。",
+        "en": "Combines outlier and missing-value treatment, feature engineering and XGBoost tuning with cross-validation and overfitting analysis."
+      },
+      "label": {
+        "zh": "Kaggle · 2025.04",
+        "en": "Kaggle · April 2025"
+      },
+      "url": "https://www.kaggle.com/code/ou20040313/12-636-xgboost-bayes",
+      "tags": [
+        "Regression",
+        "XGBoost",
+        "Feature engineering"
+      ],
+      "date": "2025-04"
+    },
+    {
+      "title": {
+        "zh": "卡路里消耗预测",
+        "en": "Predicting calorie expenditure"
+      },
+      "description": {
+        "zh": "使用 XGBoost 开展卡路里消耗回归预测，公开竞赛建模 Notebook。",
+        "en": "A public competition notebook using XGBoost for calorie-expenditure regression."
+      },
+      "label": {
+        "zh": "Kaggle · 2025.05",
+        "en": "Kaggle · May 2025"
+      },
+      "url": "https://www.kaggle.com/code/ou20040313/calorie-xgboost",
+      "tags": [
+        "XGBoost",
+        "Regression",
+        "Notebook"
+      ],
+      "date": "2025-05"
+    }
+  ],
+  "intellectual_property": [
+    {
+      "title": {
+        "zh": "基于深度强化学习的供暖管道剩余寿命预测与维护方法",
+        "en": "Deep reinforcement learning for heating-pipeline remaining-life prediction and maintenance"
+      },
+      "date": "2025-06-27",
+      "kind": "patent",
+      "number": "CN120217874A",
+      "url": "https://patents.google.com/patent/CN120217874A/zh",
+      "contribution_order": 1,
+      "role": {
+        "zh": "第一发明人",
+        "en": "First inventor"
+      }
+    },
+    {
+      "title": {
+        "zh": "管道寿命预测与预测性维护系统 V1.0",
+        "en": "Pipeline life prediction and predictive maintenance system V1.0"
+      },
+      "date": "2025-07-09",
+      "kind": "copyright",
+      "number": "2025SR1211205",
+      "source_file": "管道寿命预测与预测性维护系统.pdf",
+      "contribution_order": 1,
+      "role": {
+        "zh": "第一著作权人",
+        "en": "First copyright holder"
+      }
+    },
+    {
+      "title": {
+        "zh": "管道故障预测系统 V1.0",
+        "en": "Pipeline failure prediction system V1.0"
+      },
+      "date": "2025-06-26",
+      "kind": "copyright",
+      "number": "2025SR1094590",
+      "source_file": "管道故障预测系统.pdf",
+      "contribution_order": 1,
+      "role": {
+        "zh": "第一著作权人",
+        "en": "First copyright holder"
+      }
+    },
+    {
+      "title": {
+        "zh": "“树木碳储量变化”分析系统 V1.0",
+        "en": "Tree carbon-stock change analysis system V1.0"
+      },
+      "date": "2025-06-19",
+      "kind": "copyright",
+      "number": "2025SR1045421",
+      "source_file": "“树木碳储量变化”分析系统.pdf",
+      "contribution_order": 3,
+      "role": {
+        "zh": "第三著作权人",
+        "en": "Third copyright holder"
+      }
+    },
+    {
+      "title": {
+        "zh": "“林产碳管家”林产品碳储量计算系统 V1.0",
+        "en": "Forest-product carbon-stock calculation system V1.0"
+      },
+      "date": "2025-06-18",
+      "kind": "copyright",
+      "number": "2025SR1038533",
+      "source_file": "“林产碳管家”林产品碳储量计算系统.pdf",
+      "contribution_order": 3,
+      "role": {
+        "zh": "第三著作权人",
+        "en": "Third copyright holder"
+      }
+    },
+    {
+      "title": {
+        "zh": "“生物量与时间”图线模拟系统 V1.0",
+        "en": "Biomass–time curve simulation system V1.0"
+      },
+      "date": "2025-04-22",
+      "kind": "copyright",
+      "number": "2025SR0656847",
+      "source_file": "“生物量与时间”图线模拟系统2025SR0656847.pdf",
+      "contribution_order": 2,
+      "role": {
+        "zh": "第二著作权人",
+        "en": "Second copyright holder"
+      }
+    },
+    {
+      "title": {
+        "zh": "基于人工蜂群优化算法与MvSL01-SVM联合的多视角分类可视化软件 V1.0",
+        "en": "Multi-view classification visualization with artificial bee colony optimization and MvSL01-SVM V1.0"
+      },
+      "date": "2025-04-21",
+      "kind": "copyright",
+      "number": "2025SR0649932",
+      "source_file": "基于人工蜂群优化算法与MvSL01-SVM联合的多视角分类可视化软件V1.0.pdf",
+      "contribution_order": 2,
+      "role": {
+        "zh": "第二著作权人",
+        "en": "Second copyright holder"
+      }
+    },
+    {
+      "title": {
+        "zh": "最佳水位控制仿真系统 V1.0",
+        "en": "Optimal water-level control simulation system V1.0"
+      },
+      "date": "2025-04-14",
+      "kind": "copyright",
+      "number": "2025SR0613071",
+      "source_file": "最佳水位控制仿真系统.pdf",
+      "contribution_order": 1,
+      "role": {
+        "zh": "第一著作权人",
+        "en": "First copyright holder"
+      }
+    },
+    {
+      "title": {
+        "zh": "基于贪心算法改进的智能排班系统 V1.0",
+        "en": "Intelligent scheduling with an improved greedy algorithm V1.0"
+      },
+      "date": "2024-11-26",
+      "kind": "copyright",
+      "number": "2024SR1894262",
+      "source_file": "基于贪心算法改进的智能排班系统.pdf",
+      "contribution_order": 1,
+      "role": {
+        "zh": "第一著作权人",
+        "en": "First copyright holder"
+      }
+    },
+    {
+      "title": {
+        "zh": "老年人失能风险评估系统 V1.0",
+        "en": "Disability-risk assessment system for older adults V1.0"
+      },
+      "date": "2024-09-18",
+      "kind": "copyright",
+      "number": "2024SR1382400",
+      "source_file": "软著-老年人失能风险评估系统.pdf",
+      "contribution_order": 1,
+      "role": {
+        "zh": "第一著作权人",
+        "en": "First copyright holder"
+      }
+    },
+    {
+      "title": {
+        "zh": "管道寿命预测与风险管理系统 V1.0",
+        "en": "Pipeline life prediction and risk management system V1.0"
+      },
+      "date": "2024-08-26",
+      "kind": "copyright",
+      "number": "2024SR1244171",
+      "source_file": "软著-管道寿命预测与风险管理系统.pdf",
+      "contribution_order": 1,
+      "role": {
+        "zh": "第一著作权人",
+        "en": "First copyright holder"
+      }
+    }
+  ],
+  "honors": [
+    {
+      "year": 2025,
+      "rank": 2,
+      "prize_order": 0,
+      "title": {
+        "zh": "国家奖学金",
+        "en": "National Scholarship"
+      },
+      "level": {
+        "zh": "国家级",
+        "en": "National"
+      },
+      "result": {
+        "zh": "荣誉",
+        "en": "Honor"
+      }
+    },
+    {
+      "year": 2025,
+      "rank": 2,
+      "prize_order": 0,
+      "title": {
+        "zh": "比亚迪奖学金",
+        "en": "BYD Scholarship"
+      },
+      "level": {
+        "zh": "国家级",
+        "en": "National"
+      },
+      "result": {
+        "zh": "荣誉",
+        "en": "Honor"
+      }
+    },
+    {
+      "year": 2025,
+      "rank": 2,
+      "prize_order": 3,
+      "title": {
+        "zh": "全国大学生市场调查与分析大赛",
+        "en": "National Market Research and Analysis Competition"
+      },
+      "level": {
+        "zh": "全国",
+        "en": "National"
+      },
+      "result": {
+        "zh": "三等奖 · 负责人",
+        "en": "Third Prize · Team leader"
+      }
+    },
+    {
+      "year": 2023,
+      "rank": 2,
+      "prize_order": 3,
+      "title": {
+        "zh": "第十五届全国大学生数学竞赛",
+        "en": "15th National College Student Mathematics Competition"
+      },
+      "level": {
+        "zh": "全国",
+        "en": "National"
+      },
+      "result": {
+        "zh": "三等奖 · 个人",
+        "en": "Third Prize · Individual"
+      }
+    },
+    {
+      "year": 2023,
+      "rank": 1,
+      "prize_order": 2,
+      "title": {
+        "zh": "第十五届全国大学生数学竞赛",
+        "en": "15th National College Student Mathematics Competition"
+      },
+      "level": {
+        "zh": "北京市",
+        "en": "Beijing"
+      },
+      "result": {
+        "zh": "二等奖 · 个人",
+        "en": "Second Prize · Individual"
+      }
+    },
+    {
+      "year": 2024,
+      "rank": 3,
+      "prize_order": 0,
+      "title": {
+        "zh": "美国大学生数学建模大赛",
+        "en": "Mathematical Contest in Modeling (MCM/ICM)"
+      },
+      "level": {
+        "zh": "国际",
+        "en": "International"
+      },
+      "result": {
+        "zh": "H 奖（二等奖）· 负责人",
+        "en": "Honorable Mention (Second Prize) · Team leader"
+      }
+    },
+    {
+      "year": 2024,
+      "rank": 3,
+      "prize_order": 2,
+      "title": {
+        "zh": "亚太杯数学建模大赛",
+        "en": "Asia and Pacific Mathematical Contest in Modeling"
+      },
+      "level": {
+        "zh": "国际",
+        "en": "International"
+      },
+      "result": {
+        "zh": "二等奖 · 负责人",
+        "en": "Second Prize · Team leader"
+      }
+    },
+    {
+      "year": 2024,
+      "rank": 1,
+      "prize_order": 1,
+      "title": {
+        "zh": "全国大学生节能减排社会实践与科技竞赛",
+        "en": "National College Student Energy Conservation and Emission Reduction Competition"
+      },
+      "level": {
+        "zh": "北京市",
+        "en": "Beijing"
+      },
+      "result": {
+        "zh": "一等奖 · 负责人",
+        "en": "First Prize · Team leader"
+      }
+    },
+    {
+      "year": 2024,
+      "rank": 1,
+      "prize_order": 2,
+      "title": {
+        "zh": "全国大学生数学建模大赛",
+        "en": "Contemporary Undergraduate Mathematical Contest in Modeling"
+      },
+      "level": {
+        "zh": "北京市",
+        "en": "Beijing"
+      },
+      "result": {
+        "zh": "二等奖 · 负责人",
+        "en": "Second Prize · Team leader"
+      }
+    },
+    {
+      "year": 2025,
+      "rank": 1,
+      "prize_order": 2,
+      "title": {
+        "zh": "第十一届统计建模大赛",
+        "en": "11th Statistical Modeling Competition"
+      },
+      "level": {
+        "zh": "北京市",
+        "en": "Beijing"
+      },
+      "result": {
+        "zh": "二等奖 · 负责人",
+        "en": "Second Prize · Team leader"
+      }
+    },
+    {
+      "year": 2025,
+      "rank": 1,
+      "prize_order": 2,
+      "title": {
+        "zh": "能源经济学术论文大赛",
+        "en": "Energy Economics Academic Paper Competition"
+      },
+      "level": {
+        "zh": "北京市",
+        "en": "Beijing"
+      },
+      "result": {
+        "zh": "二等奖 · 负责人",
+        "en": "Second Prize · Team leader"
+      }
+    },
+    {
+      "year": 2025,
+      "rank": 1,
+      "prize_order": 2,
+      "title": {
+        "zh": "挑战杯科技发明制作赛道",
+        "en": "Challenge Cup · Technological Inventions"
+      },
+      "level": {
+        "zh": "北京市",
+        "en": "Beijing"
+      },
+      "result": {
+        "zh": "二等奖 · 负责人",
+        "en": "Second Prize · Team leader"
+      }
+    },
+    {
+      "year": 2025,
+      "rank": 1,
+      "prize_order": 2,
+      "title": {
+        "zh": "中国国际大学生创新大赛",
+        "en": "China International College Students’ Innovation Competition"
+      },
+      "level": {
+        "zh": "北京市",
+        "en": "Beijing"
+      },
+      "result": {
+        "zh": "二等奖 · 负责人",
+        "en": "Second Prize · Team leader"
+      }
+    },
+    {
+      "year": 2025,
+      "rank": 1,
+      "prize_order": 2,
+      "title": {
+        "zh": "京彩大创北京市创新创业大赛 · 人工智能赛道",
+        "en": "Beijing Innovation and Entrepreneurship Competition · Artificial Intelligence"
+      },
+      "level": {
+        "zh": "北京市",
+        "en": "Beijing"
+      },
+      "result": {
+        "zh": "二等奖 · 负责人",
+        "en": "Second Prize · Team leader"
+      }
+    }
+  ]
+}
