@@ -52,3 +52,31 @@ footer{padding-top:14px}
 
 /* English distinctions may wrap within their table cell. */
 html[lang="en"] .award-result{white-space:normal;overflow-wrap:anywhere;min-width:0}
+
+/* Compact mobile profile and four-column education. */
+.education-short{display:none}
+@media(max-width:680px){
+ .hero{grid-template-columns:minmax(0,1fr) 96px;align-items:start;gap:20px 16px;padding:28px 0 30px}
+ .profile-heading{grid-column:1;grid-row:1;min-width:0}
+ .profile-heading h1{margin:0 0 12px;font-size:32px;line-height:1.25}
+ .profile-heading .affiliation{margin:0;font-size:12px;line-height:1.9;overflow-wrap:normal}
+ .portrait{grid-column:2;grid-row:1;align-self:start}
+ .bio{grid-column:1/-1;grid-row:2}
+ .social{grid-column:1/-1;grid-row:3;gap:16px}
+ .education-row{grid-template-columns:minmax(0,.82fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.35fr);gap:6px;align-items:center;padding:14px 0}
+ .education-row>div{grid-column:auto;grid-row:auto;min-width:0;font-size:12px;line-height:1.65}
+ .education-row .education-date{font-size:11px;text-align:left;word-break:normal;overflow-wrap:normal}
+ .education-school,.education-college,.education-degree{word-break:normal;overflow-wrap:normal;text-align:center}
+ html[lang="en"] .education-row>div{font-size:11px}
+ html[lang="en"] .education-full{display:none}
+ html[lang="en"] .education-short{display:inline}
+}
+
+.affiliation-item{display:inline-block}
+.education-unit+.education-unit::before{content:" · "}
+.education-unit{display:inline-block;white-space:nowrap}
+@media(max-width:680px){
+ html[lang="zh-CN"] .profile-heading .affiliation-item{white-space:nowrap}
+ html[lang="en"] .education-row{grid-template-columns:minmax(0,.78fr) minmax(0,1.2fr) minmax(0,1.03fr) minmax(0,1.32fr)}
+ html[lang="en"] .education-school .education-short{white-space:nowrap}
+}
