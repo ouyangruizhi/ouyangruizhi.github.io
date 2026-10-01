@@ -30,7 +30,13 @@ for lang in ['zh','en']:
  tag_zh={'Reinforcement learning':'强化学习','Network flow':'网络流','Fuzzy control':'模糊控制','Optimization':'优化','Clustering':'聚类','Model selection':'模型选择','Bayesian optimization':'贝叶斯优化','Classification':'分类','Regression':'回归','Feature engineering':'特征工程','Statistics':'统计学'}
  for i,p in enumerate(sorted(d['competition_projects'],key=lambda p:p.get('date',''),reverse=True)):
   if i==2:parts.append('</div><details class="more-projects"><summary>'+T('展开更多项目','Show more projects')+'</summary><div class="project-grid">')
-  parts.append('<article class="project"><p class="project-label">'+e(p['label'][lang])+'</p><h3>'+e(p['title'][lang])+'</h3><p>'+e(p['description'][lang])+'</p><div class="tags">'+''.join('<span>'+e(t if en else tag_zh.get(t,t))+'</span>' for t in p['tags'])+'</div>'+link(T('查看项目','View project'),p['url'])+'</article>')
+  result=p.get('result')
+  result_html=''
+  if result:
+   top=f"{100*result['rank']/result['teams']:.2f}"
+   result_text=T('最终私榜：','Final private leaderboard: ')+result['metric']+' '+result['score']+' · '+str(result['rank'])+'/'+str(result['teams'])+' · TOP'+top+'%'
+   result_html='<p class="project-label">'+link(result_text,result['url'])+'</p>'
+  parts.append('<article class="project"><p class="project-label">'+e(p['label'][lang])+'</p><h3>'+e(p['title'][lang])+'</h3><p>'+e(p['description'][lang])+'</p>'+result_html+'<div class="tags">'+''.join('<span>'+e(t if en else tag_zh.get(t,t))+'</span>' for t in p['tags'])+'</div>'+link(T('查看项目','View project'),p['url'])+'</article>')
  parts.append('</div></details></div><div class="project-section"><h3 class="subheading">'+T('专利与软著','Patents & Software Copyrights')+'</h3><div class="ip-table-scroll"><table class="ip-table"><thead><tr><th scope="col">'+T('日期','Date')+'</th><th scope="col">'+T('名称','Title')+'</th><th scope="col">'+T('类型','Type')+'</th><th scope="col">'+T('登记/公开号','Registration / publication no.')+'</th><th scope="col">'+T('署名','Contribution')+'</th></tr></thead><tbody>')
  for item in sorted(d['intellectual_property'],key=lambda item:(0 if item['kind']=='patent' else 1,item.get('contribution_order',1),-int(item['date'].replace('-','')))):
   number=link(item['number'],item['url']) if item.get('url') else e(item['number'])
@@ -41,4 +47,4 @@ for lang in ['zh','en']:
   parts.append('<article class="award" role="row" data-year="'+str(a['year'])+'" data-rank="'+str(a['rank'])+'" data-prize="'+str(a.get('prize_order',0))+'"><time role="cell">'+str(a['year'])+'</time><h3 role="cell">'+e(a['title'][lang])+'</h3><span class="award-result" role="cell">'+e((a['level'][lang]+(' ' if en or 'H 奖' in a['result'][lang] else ''))+a['result'][lang])+'</span></article>')
  parts.append('</div></section></div></main><footer class="wrap"><span>'+school+'</span><span>'+T('欧阳瑞志｜学术主页','Ruizhi Ouyang | Academic Homepage')+'</span><span>'+T('联系方式：','Contact: ')+'<a href="mailto:ouyangruizhi@bjfu.edu.cn">ouyangruizhi@bjfu.edu.cn</a></span></footer><script src="'+prefix+'script.js"></script></body></html>')
  dest=root/'dist/en' if en else root/'dist';dest.mkdir(exist_ok=True,parents=True);(dest/'index.html').write_text('\n'.join(parts))
-print('Built Chinese and English: 3 papers, 5 competition cards, 1 patent, 10 software copyrights, 14 honors')
+print('Built Chinese and English: 3 papers, 7 competition cards, 1 patent, 10 software copyrights, 14 honors')

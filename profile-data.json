@@ -145,7 +145,17 @@
         "Bayesian optimization",
         "Classification"
       ],
-      "date": "2025-03"
+      "date": "2025-03",
+      "result": {
+        "metric": "AUC",
+        "score": "0.90037",
+        "rank": 255,
+        "teams": 4381,
+        "leaderboard": "private",
+        "status": "final",
+        "verified_at": "2026-10-01",
+        "url": "https://www.kaggle.com/competitions/playground-series-s5e3/leaderboard"
+      }
     },
     {
       "title": {
@@ -166,7 +176,17 @@
         "XGBoost",
         "Feature engineering"
       ],
-      "date": "2025-04"
+      "date": "2025-04",
+      "result": {
+        "metric": "RMSE",
+        "score": "11.67622",
+        "rank": 111,
+        "teams": 3310,
+        "leaderboard": "private",
+        "status": "final",
+        "verified_at": "2026-10-01",
+        "url": "https://www.kaggle.com/competitions/playground-series-s5e4/leaderboard"
+      }
     },
     {
       "title": {
@@ -187,7 +207,79 @@
         "Regression",
         "Notebook"
       ],
-      "date": "2025-05"
+      "date": "2025-05",
+      "result": {
+        "metric": "RMSLE",
+        "score": "0.05875",
+        "rank": 598,
+        "teams": 4316,
+        "leaderboard": "private",
+        "status": "final",
+        "verified_at": "2026-10-01",
+        "url": "https://www.kaggle.com/competitions/playground-series-s5e5/leaderboard"
+      }
+    },
+    {
+      "title": {
+        "zh": "灌溉需求预测",
+        "en": "Predicting irrigation need"
+      },
+      "description": {
+        "zh": "构造数值与分类交叉特征，结合随机森林特征筛选、SMOTE与LightGBM开展三分类预测。",
+        "en": "Three-class prediction with numerical and categorical interactions, random-forest feature selection, SMOTE and LightGBM."
+      },
+      "label": {
+        "zh": "Kaggle · 2026.04",
+        "en": "Kaggle · April 2026"
+      },
+      "url": "https://www.kaggle.com/code/ou20040313/s6e4-lightgbm-predicting-irrigation-need",
+      "tags": [
+        "LightGBM",
+        "Classification",
+        "Feature engineering"
+      ],
+      "date": "2026-04",
+      "result": {
+        "metric": "Balanced Accuracy",
+        "score": "0.96271",
+        "rank": 2475,
+        "teams": 4315,
+        "leaderboard": "private",
+        "status": "final",
+        "verified_at": "2026-10-01",
+        "url": "https://www.kaggle.com/competitions/playground-series-s6e4/leaderboard"
+      }
+    },
+    {
+      "title": {
+        "zh": "电动车购买意愿预测",
+        "en": "Predicting electric vehicle purchases"
+      },
+      "description": {
+        "zh": "构造数值位、频率与目标编码特征，比较GPU XGBoost单模型方案，并以分层交叉验证评估OOF AUC。",
+        "en": "Compares GPU XGBoost models using numerical digits, frequency features and target encoding, evaluated with stratified cross-validation and OOF AUC."
+      },
+      "label": {
+        "zh": "Kaggle · 2026.09",
+        "en": "Kaggle · September 2026"
+      },
+      "url": "https://www.kaggle.com/code/ou20040313/s6e9-single-model-alternatives",
+      "tags": [
+        "XGBoost",
+        "Classification",
+        "Feature engineering"
+      ],
+      "date": "2026-09",
+      "result": {
+        "metric": "AUC",
+        "score": "0.94543",
+        "rank": 406,
+        "teams": 3575,
+        "leaderboard": "private",
+        "status": "final",
+        "verified_at": "2026-10-01",
+        "url": "https://www.kaggle.com/competitions/playground-series-s6e9/leaderboard"
+      }
     }
   ],
   "intellectual_property": [
