@@ -89,15 +89,17 @@ html[lang="en"] .award-result{white-space:normal;overflow-wrap:anywhere;min-widt
 }
 .header-controls{display:flex;align-items:center;gap:16px;flex-shrink:0}
 .header-controls .language-switch{order:0}
-.theme-switch{display:flex;align-items:center;gap:2px}
-.theme-option{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;padding:6px;border:0;border-radius:50%;background:transparent;color:var(--muted);cursor:pointer}
-.theme-option svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-.theme-option.is-current{color:var(--blue)}
-.theme-option:hover{background:var(--surface);color:var(--ink)}
-.theme-option:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;padding:6px;border:0;border-radius:50%;background:transparent;color:var(--muted);cursor:pointer}
+.theme-toggle svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.theme-toggle:hover{background:var(--surface);color:var(--ink)}
+.theme-toggle:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.theme-moon{display:none}
+:root[data-theme="dark"] .theme-sun{display:none}
+:root[data-theme="dark"] .theme-moon{display:block}
+@media(prefers-color-scheme:dark){:root:not([data-theme]) .theme-sun{display:none}:root:not([data-theme]) .theme-moon{display:block}}
 .social a{border-color:var(--social-line)}
 /* Original scientific figures retain their white canvas and colors. */
 .paper-figure img{background:#fff}
 @media(max-width:1250px){.topbar{flex-wrap:wrap;padding:13px 0;gap:12px 20px}.header-controls{order:1}nav{order:2;width:100%}}
-@media(max-width:680px){.header-controls{gap:10px}.theme-option{width:30px;height:32px;padding:6px}.language-switch{font-size:12px}}
+@media(max-width:680px){.header-controls{gap:10px}.theme-toggle{width:30px;height:32px;padding:6px}.language-switch{font-size:12px}}
 @media(max-width:400px){.topbar{gap:10px 12px}.brand{width:100%}.header-controls{margin-left:auto}nav{gap:20px}}
