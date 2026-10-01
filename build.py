@@ -28,7 +28,11 @@ for lang in ['zh','en']:
   parts.append('<article class="publication'+(' has-figure' if p.get('figure') else '')+'"><div class="pub-year">'+str(p['year'])+'</div><div><h3>'+link(p['title'],'https://doi.org/'+p['doi'])+'</h3><p class="authors">'+authors+'</p><p class="pub-meta">'+meta+'</p><p class="pub-note">'+e(p['note_en'] if en else p['note'])+'</p>'+link('DOI: '+p['doi'],'https://doi.org/'+p['doi'])+'</div>'+('<figure class="paper-figure"><img src="'+prefix+p['figure']['path']+'" alt="'+e(p['figure'][lang],quote=True)+'" loading="lazy"></figure>' if p.get('figure') else '')+'</article>')
  parts.append('</section><section id="projects">'+heading(T('公开项目','Public Projects'))+'<div class="project-section"><h3 class="subheading">'+T('公开竞赛','Public Competitions')+'</h3><div class="project-grid">')
  tag_zh={'Reinforcement learning':'强化学习','Network flow':'网络流','Fuzzy control':'模糊控制','Optimization':'优化','Clustering':'聚类','Model selection':'模型选择','Bayesian optimization':'贝叶斯优化','Classification':'分类','Regression':'回归','Feature engineering':'特征工程','Statistics':'统计学'}
- for i,p in enumerate(sorted(d['competition_projects'],key=lambda p:p.get('date',''),reverse=True)):
+ projects=d['competition_projects']
+ ranked=[p for p in projects if p.get('result',{}).get('leaderboard')=='private' and p['result'].get('status')=='final']
+ featured=sorted(ranked,key=lambda p:p['result']['rank']/p['result']['teams'])[:2]
+ remaining=sorted([p for p in projects if p not in featured],key=lambda p:p.get('date',''),reverse=True)
+ for i,p in enumerate(featured+remaining):
   if i==2:parts.append('</div><details class="more-projects"><summary>'+T('展开更多项目','Show more projects')+'</summary><div class="project-grid">')
   result=p.get('result')
   result_html=''
@@ -48,3 +52,4 @@ for lang in ['zh','en']:
  parts.append('</div></section></div></main><footer class="wrap"><span>'+school+'</span><span>'+T('欧阳瑞志｜学术主页','Ruizhi Ouyang | Academic Homepage')+'</span><span>'+T('联系方式：','Contact: ')+'<a href="mailto:ouyangruizhi@bjfu.edu.cn">ouyangruizhi@bjfu.edu.cn</a></span></footer><script src="'+prefix+'script.js"></script></body></html>')
  dest=root/'dist/en' if en else root/'dist';dest.mkdir(exist_ok=True,parents=True);(dest/'index.html').write_text('\n'.join(parts))
 print('Built Chinese and English: 3 papers, 7 competition cards, 1 patent, 10 software copyrights, 14 honors')
+
