@@ -14,10 +14,10 @@ for lang in ['zh','en']:
  parts.append('<main id="main"><section class="hero wrap" id="top"><div class="hero-copy"><div class="profile-heading"><h1>'+name+'</h1><p class="affiliation">'+'<span class="affiliation-item">'+school+'</span><span class="affiliation-item"><span class="affiliation-separator">·</span>'+college+'</span><span class="affiliation-item"><span class="affiliation-separator">·</span>'+major+'</span>'+'</p></div><p class="bio">'+bio+'</p>'+ (root/'contact-links.html').read_text()+'</div><figure class="portrait"><img src="'+prefix+'assets/lifestyle.jpg?v=20261001" alt="'+T('欧阳瑞志的生活照','Ruizhi Ouyang outdoors')+'" width="1203" height="1603"></figure></section><div class="wrap content">')
  heading=lambda title:'<div class="section-heading"><h2>'+title+'</h2></div>'
  parts.append('<section id="background">'+heading(T('教育经历','Education'))+'<div class="education-list">')
- for date,study in [(T('在读','In progress'),major+T(' · 直博生',' · Direct-entry Ph.D.')),('2022.09–2026.06',T('统计学 · 理学学士','Statistics · B.Sc.'))]:
+ for date,study in [(T('2026.09–至今','2026.09–Present'),major+T(' · 直博生',' · Direct-entry Ph.D.')),('2022.09–2026.06',T('统计学 · 理学学士','Statistics · B.Sc.'))]:
   date_html=date.replace('–','–<wbr>')
   college_html='<span class="education-full">'+college+'</span><span class="education-short">Econ. &amp; Management</span>' if en else college
-  study_short='Agric. &amp; Forestry Econ. · Ph.D.' if date=='In progress' else 'Statistics · B.Sc.'
+  study_short='Agric. &amp; Forestry Econ. · Ph.D.' if date=='2026.09–Present' else 'Statistics · B.Sc.'
   study_html='<span class="education-full">'+study+'</span><span class="education-short">'+study_short+'</span>' if en else ''.join('<span class="education-unit">'+v+'</span>' for v in study.split(' · '))
   school_html='<span class="education-full">'+school+'</span><span class="education-short" title="Beijing Forestry University">Beijing<br>Forestry Univ.</span>' if en else school
   parts.append('<article class="education-row"><div class="education-date">'+date_html+'</div><div class="education-school">'+school_html+'</div><div class="education-college">'+college_html+'</div><div class="education-degree">'+study_html+'</div></article>')
